@@ -1,1 +1,240 @@
 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة نيو هافانا الرقمية - لخدمة ضيوف الرحمن</title>
+    <!-- Tailwind CSS لضمان التصميم العصري والسريع -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Cairo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Cairo', sans-serif; }
+        .bg-gold { background-color: #D4AF37; }
+        .text-gold { color: #D4AF37; }
+        .border-gold { border-color: #D4AF37; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- 🚨 1. شريط التنبيهات الذكي المحدث -->
+    <div class="bg-red-600 text-white text-center py-2 px-4 text-sm font-semibold overflow-hidden relative z-50">
+        <div class="inline-block animate-pulse">
+            <i class="fa-solid fa-bell text-yellow-300 ml-2"></i>
+            ⏱️ تنبيه ذكي: قريباً.. تنطلق رحلات العمرة فور اعتماد الوزارة | بادر بحجز مكانك من الآن واضمن أولويتك في السفر!
+        </div>
+    </div>
+
+    <!-- 🏗️ الواجهة الترحيبية والتعريفية (Header & Hero) -->
+    <header class="bg-white shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
+            
+            <!-- الكروت التفاعلية الثلاثة (يسار الهيدر) -->
+            <div class="flex flex-wrap gap-2 justify-center order-2 md:order-1 w-full md:w-auto">
+                <div class="bg-emerald-50 border border-emerald-100 p-2 rounded-lg flex items-center gap-2 max-w-[200px]">
+                    <i class="fa-solid fa-hotel text-emerald-600 text-lg"></i>
+                    <div class="text-xs">
+                        <h4 class="font-bold">فنادق قريبة</h4>
+                        <p class="text-gray-500 scale-95 origin-right">خطوات عن الحرم</p>
+                    </div>
+                </div>
+                <div class="bg-emerald-50 border border-emerald-100 p-2 rounded-lg flex items-center gap-2 max-w-[200px]">
+                    <i class="fa-solid fa-plane-departure text-emerald-600 text-lg"></i>
+                    <div class="text-xs">
+                        <h4 class="font-bold">طيران مباشر</h4>
+                        <p class="text-gray-500 scale-95 origin-right">إجراءات قياسية</p>
+                    </div>
+                </div>
+                <div class="bg-emerald-50 border border-emerald-100 p-2 rounded-lg flex items-center gap-2 max-w-[200px]">
+                    <i class="fa-solid fa-bus text-emerald-600 text-lg"></i>
+                    <div class="text-xs">
+                        <h4 class="font-bold">انتقالات حديثة</h4>
+                        <p class="text-gray-500 scale-95 origin-right">من الباب للمطار</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- اسم الشركة واللوجو (في المنتصف) -->
+            <div class="text-center order-1 md:order-2 w-full md:w-auto">
+                <h1 class="text-3xl md:text-4xl font-black text-emerald-800 tracking-wide">نيو هافانا</h1>
+                <p class="text-xs md:text-sm font-semibold text-amber-600 mt-1">إدارة أ. مصطفى حسن</p>
+            </div>
+            
+            <div class="hidden md:block w-[300px] order-3"></div>
+        </div>
+    </header>
+
+    <!-- البنر الروحاني الرئيسي -->
+    <section class="relative bg-emerald-900 text-white py-16 px-4 text-center overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1565552645632-d725f8bfc19a?auto=format&fit=crop&q=80')] bg-cover bg-center"></div>
+        <div class="relative max-w-4xl mx-auto z-10">
+            <span class="bg-emerald-800/80 border border-emerald-600 px-4 py-2 rounded-full text-sm font-medium inline-block mb-4 text-yellow-300">بوابتكم لرحلة إيمانية مطمئنة</span>
+            <h2 class="text-3xl md:text-5xl font-black mb-4 leading-tight">لَبَّيْكَ اللَّهُمَّ لَبَّيْكَ..<br><span class="text-gold">اشتاقت الأرواح لزيارة بيت الله الحرام</span></h2>
+            <p class="text-md md:text-xl text-emerald-100 font-light max-w-2xl mx-auto leading-relaxed">
+                منصة تفاعلية ذكية متكاملة لخدمة ضيوف الرحمن وتسهيل التواصل المباشر. سيب مشقة التنظيم والإجراءات علينا، وركّز بكل جوارحك في مناسكك.
+            </p>
+        </div>
+    </section>
+
+    <!-- 🗓️ 2. شبكة برامج المواسم الدينية (Trips Grid) المحدثة -->
+    <section class="max-w-7xl mx-auto px-4 py-12">
+        <div class="text-center mb-10">
+            <h3 class="text-2xl md:text-3xl font-bold text-gray-900">شبكة برامج المواسم الدينية</h3>
+            <p class="text-gray-500 mt-2">تابع مواسمنا المحدثة وبادر بحجز مكانك الاستباقي</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- كارت موسم العمرة الحالية -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+                <div class="bg-emerald-800 p-4 text-white text-center">
+                    <i class="fa-solid fa-kaaba text-3xl mb-2 text-yellow-300"></i>
+                    <h4 class="text-lg font-bold">رحلات العمرة الحالية</h4>
+                </div>
+                <div class="p-6 text-center">
+                    <p class="text-gray-600 text-sm min-h-[60px]">جاري التجهيز بعد اعتماد الوزارة - بادر بحجز مكانك لتكون في صدارة الرحلات الأولى فور الانطلاق.</p>
+                    <div class="my-4 pt-4 border-t border-gray-50">
+                        <span class="text-xl font-bold text-emerald-700">بادر بحجز مكانك الآن</span>
+                    </div>
+                    <a href="https://wa.me/201009877216?text=أهلاً منصة نيو هافانا، أريد تسجيل اسمي وحجز مكاني في رحلات العمرة الحالية فور اعتماد الوزارة." target="_blank" class="block w-full bg-emerald-600 text-white font-semibold py-3 rounded-xl hover:bg-emerald-700 transition">بادر بحجز مكانك الآن</a>
+                </div>
+            </div>
+
+            <!-- كارت موسم إجازات نصف السنة وشهر رجب (المدمج) -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+                <div class="bg-emerald-800 p-4 text-white text-center">
+                    <i class="fa-solid fa-bus text-3xl mb-2 text-yellow-300"></i>
+                    <h4 class="text-lg font-bold">عمرة إجازات نصف السنة وشهر رجب</h4>
+                </div>
+                <div class="p-6 text-center">
+                    <p class="text-gray-600 text-sm min-h-[60px]">الرحلة الأنسب للم الشمل العائلي ونفحات رجب الروحانية.. استغل إجازة المدارس والجامعات وابدأ رحلة الشوق بأسعار مميزة للحجز المبكر.</p>
+                    <div class="my-4 pt-4 border-t border-gray-50">
+                        <span class="text-xl font-bold text-amber-600">أسعار الحجز المبكر</span>
+                    </div>
+                    <a href="https://wa.me/201009877216?text=أهلاً منصة نيو هافانا، أريد الاستفسار عن برامج وتفاصيل عمرة إجازة نصف السنة وشهر رجب المبارك." target="_blank" class="block w-full bg-emerald-600 text-white font-semibold py-3 rounded-xl hover:bg-emerald-700 transition">استفسر عن برامج نصف السنة ورجب</a>
+                </div>
+            </div>
+
+            <!-- كارت موسم عمرة رمضان المبارك (كما هو) -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+                <div class="bg-emerald-800 p-4 text-white text-center">
+                    <i class="fa-solid fa-moon text-3xl mb-2 text-yellow-300"></i>
+                    <h4 class="text-lg font-bold">عمرة شهر رمضان المعظم</h4>
+                </div>
+                <div class="p-6 text-center">
+                    <p class="text-gray-600 text-sm min-h-[60px]">عمرة في رمضان تعدل حجة.. احجز مكانك الاستثنائي في برامج النصف الأول أو العشر الأواخر المباركة من الآن وضمان المقعد.</p>
+                    <div class="my-4 pt-4 border-t border-gray-50">
+                        <span class="text-xl font-bold text-emerald-800">النصف الأول / العشر الأواخر</span>
+                    </div>
+                    <a href="https://wa.me/201009877216?text=أهلاً منصة نيو هافانا، حابب أعرف تفاصيل الحجز المسبق لعمرة شهر رمضان المبارك (برامج النصف الأول والعشر الأواخر)." target="_blank" class="block w-full bg-emerald-600 text-white font-semibold py-3 rounded-xl hover:bg-emerald-700 transition">عرض تفاصيل البرنامج والمواعيد</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📱 بوابة المعتمر الذكية (النسخة المريحة سريعة الأتمتة بدون إرهاق كود) -->
+    <section class="bg-emerald-50 py-12 px-4 border-t border-b border-emerald-100">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-10">
+                <span class="bg-emerald-200 text-emerald-800 px-3 py-1 rounded-full text-xs font-bold">بوابة التواصل السريع</span>
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mt-2">بوابة المعتمر الذكية المباشرة</h3>
+                <p class="text-gray-600 text-sm mt-1">اضغط على الأداة المطلوبة لتصلك التفاصيل المحدثة فوراً على الواتساب</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- الأداة الأولى: طلب حاسبة المسافة والضمان الفعلي -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                    <div class="mb-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-emerald-100 p-3 rounded-xl text-emerald-700">
+                                <i class="fa-solid fa-map-location-dot text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">🗺️ استفسار المسافات والضمان الفعلي</h4>
+                                <p class="text-xs text-gray-500">تأكد من مسافة فندقك بالخطوة</p>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            بدل التخمين، اضغط هنا لترسل لنا اسم الفندق المعروض عليك، وسيقوم مستشار الرحلة بإرسال خريطة حية ومسافة دقيقة بالخطوات من الفندق وحتى ساحة الحرم لتوثيقها في عقدك المكتوب.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/201009877216?text=أهلاً نيو هافانا، حابب أستفسر عن مسافة الفنادق المتاحة حالياً وضمان الباصات الترددية للحرم." target="_blank" class="text-center block w-full bg-emerald-700 text-white font-semibold py-3 rounded-xl hover:bg-emerald-800 transition text-sm">
+                        🔍 استعلم عن مسافة وضمان فندقك الآن
+                    </a>
+                </div>
+
+                <!-- الأداة الثانية: طلب الكتالوج الشخصي الفوري المحدث -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                    <div class="mb-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-emerald-100 p-3 rounded-xl text-emerald-700">
+                                <i class="fa-solid fa-file-pdf text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">📄 طلب الكتالوج التسويقي المحدث (PDF)</h4>
+                                <p class="text-xs text-gray-500">أحدث الأسعار والبرامج جاهزة للمشاركة</p>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            سواء كنت معتمراً فردياً أو رئيس مجموعة؛ بنقرة واحدة اطلب الكتالوج الرسمي المحدث بالكامل بآخر تعديلات الأسعار لتقوم بمشاركته فوراً مع أهلك وعائلتك على جروبات الواتساب.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/201009877216?text=أهلاً نيو هافانا، من فضلك أريد الحصول على ملف الكتالوج الـ PDF المحدث لبرامج العمرة لمشاركته مع المجموعة وعائلتي." target="_blank" class="text-center block w-full bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 rounded-xl transition text-sm">
+                        📥 اطلب الكتالوج الشخصي المحدث PDF
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 👥 قسم بيانات الاتصال والعنوان المحدث (المقر) -->
+    <section class="max-w-4xl mx-auto px-4 py-12 text-center">
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+            <h3 class="text-xl font-bold text-emerald-800 mb-6">يسعدنا تواصلكم المباشر وزيارتنا</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+                <div class="p-4 bg-gray-50 rounded-xl">
+                    <i class="fa-solid fa-phone text-emerald-600 text-xl mb-2"></i>
+                    <h5 class="font-bold text-gray-700">أرقام التواصل الهاتفي</h5>
+                    <p class="text-emerald-700 font-semibold mt-1" dir="ltr">+20 100 987 7216</p>
+                    <p class="text-emerald-700 font-semibold" dir="ltr">+20 111 116 9005</p>
+                </div>
+                
+                <div class="p-4 bg-gray-50 rounded-xl">
+                    <i class="fa-solid fa-location-dot text-emerald-600 text-xl mb-2"></i>
+                    <h5 class="font-bold text-gray-700">المقر</h5>
+                    <p class="text-gray-600 mt-1 font-semibold">المنيا - أبو قرقاص</p>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-xl">
+                    <i class="fa-brands fa-whatsapp text-green-600 text-xl mb-2"></i>
+                    <h5 class="font-bold text-gray-700">الدعم الفوري والمجموعات</h5>
+                    <p class="text-gray-600 mt-1">متاح طوال اليوم لتجهيز العروض</p>
+                    <a href="https://wa.me/201009877216" target="_blank" class="text-green-600 font-bold underline text-xs block mt-1">راسلنا الآن</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🟢 زر الواتساب العائم -->
+    <div class="fixed bottom-6 left-6 z-50">
+        <a href="https://wa.me/201009877216?text=أهلاً منصة نيو هافانا، أريد الاستفسار وتأكيد تفاصيل باقات العمرة الحالية." 
+           target="_blank" 
+           class="bg-green-600 hover:bg-green-700 text-white font-bold p-4 rounded-full shadow-2xl flex items-center gap-2 transition transform hover:scale-105 duration-300">
+            <i class="fa-brands fa-whatsapp text-3xl"></i>
+            <span class="max-w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-out group-hover:max-w-xs md:max-w-xs text-sm">تواصل مباشر مع مستشار الرحلة</span>
+        </a>
+    </div>
+
+    <!-- تذييل المنصة الهوياتي المحدث -->
+    <footer class="bg-gray-900 text-gray-400 text-center py-6 text-xs">
+        <p>© 2026 نيو هافانا - إدارة أ. مصطفى حسن. جميع الحقوق محفوظة.</p>
+        <p class="mt-1 text-gray-600">المقر: المنيا - أبو قرقاص | منصة تفاعلية متكاملة لتسهيل تواصل المنسقين والأفراد.</p>
+    </footer>
+
+</body>
+</html>
